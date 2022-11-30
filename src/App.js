@@ -49,10 +49,18 @@ const App = () => {
               src={
                 movie1.Poster !== "N/A"
                   ? movie1.Poster
-                  : "https://via.placeholdeer.com/400"
+                  : "https://via.placeholder.com/400"
               }
               alt={movie1.Title}
             />
+          </div>
+
+          <div>
+            <span>{movie1.Type}</span>
+          </div>
+
+          <div>
+            <h3>{movie1.Title}</h3>
           </div>
         </div>
       </div>
