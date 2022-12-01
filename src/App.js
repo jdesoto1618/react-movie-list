@@ -23,13 +23,15 @@ const App = () => {
     <div className="app">
       <h1>Movie Database</h1>
 
-      <div className="search">
+      <div className="search-container">
         <input
+          className="search-input"
           placeholder="Search for movies"
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
         />
         <img
+          className="search-icon"
           src={SearchIcon}
           alt="search"
           onClick={() => searchMovies(searchTerm)}
