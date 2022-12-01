@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Movie Database</h1>
+      <h1 className="site-heading">Movie Database</h1>
 
       <div className="search-container">
         <input
