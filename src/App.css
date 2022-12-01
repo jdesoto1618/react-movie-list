@@ -24,6 +24,13 @@ input, textarea, select {
   font-family: inherit;
 }
 
+.app {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+  max-width: min(100%, 75rem);
+}
+
 .site-heading {
   background-image: var(--salmon-gradient);
   background-clip: text;
