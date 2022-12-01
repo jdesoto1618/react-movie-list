@@ -43,6 +43,7 @@ input, textarea, select {
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .search-input {
@@ -69,6 +70,15 @@ input, textarea, select {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+}
+
+.movie-card {
+  position: relative;
+  text-align: center;
+}
+
+.movie-card-image {
+  max-width: 18.75rem;
 }
 
 @media (min-width: 48rem) {
