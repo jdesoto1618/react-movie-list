@@ -31,12 +31,17 @@ input, textarea, select {
   max-width: min(100%, 75rem);
 }
 
+.site-heading-container {
+  margin: 4rem 0;
+}
+
 .site-heading {
   background-image: var(--salmon-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  margin: 0;
 }
 
 .search-container {
@@ -70,11 +75,17 @@ input, textarea, select {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .movie-card {
   position: relative;
   text-align: center;
+}
+
+.movie-card-image-container {
+  max-width: fit-content;
+  margin: 0 auto;
 }
 
 .movie-card-image {
@@ -122,5 +133,14 @@ input, textarea, select {
 @media (min-width: 62rem) {
   .movies-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .movie-card-image-container {
+    box-shadow: none;
+    transition: box-shadow 0.2s ease;
+  }
+
+  .movie-card-image-container:hover {
+    box-shadow: 0px 4px 32px rgb(39 117 202 / 50%), 0px 4px 32px rgb(39 117 202 / 15%);
   }
 }

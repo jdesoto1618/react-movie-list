@@ -3,7 +3,7 @@ import React from "react";
 const MovieCard = ({ movie }) => {
   return (
     <div className="movie-card">
-      <div>
+      <div className="movie-card-image-container">
         <img
           className="movie-card-image"
           src={
