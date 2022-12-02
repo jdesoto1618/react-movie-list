@@ -32,6 +32,7 @@ const App = () => {
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
         />
+
         <img
           className="search-icon"
           src={SearchIcon}

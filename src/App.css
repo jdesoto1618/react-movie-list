@@ -49,6 +49,7 @@ input, textarea, select {
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
+  max-width: 18.75rem;
 }
 
 .search-input {
@@ -58,6 +59,8 @@ input, textarea, select {
   border: none;
   border-radius: 0.25rem;
   background: var(--site-bg-color);
+  color: var(--gray-200);
+  width: 18.75rem;
 }
 
 .search-input::placeholder {
@@ -66,7 +69,8 @@ input, textarea, select {
 
 .search-icon {
   position: absolute;
-  left: 8rem;
+  left: auto;
+  right: 0.3rem;
   width: 1.5rem;
   cursor: pointer;
 }
