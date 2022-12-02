@@ -78,7 +78,39 @@ input, textarea, select {
 }
 
 .movie-card-image {
+  width: 18.75rem;
+  height: 26.25rem;
+  border-radius: 0.5rem;
+}
+
+.movie-card-details {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: var(--gray-200);
+  border-radius: 0 0 0.5rem 0.5rem;
+  transform: translateX(-50%);
+  width: 100%;
   max-width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+
+.movie-type,
+.movie-title, 
+.movie-year {
+  color: var(--site-bg-color);
+}
+
+.movie-title, 
+.movie-year {
+  margin: 0;
+}
+
+.movie-type {
+  text-transform: capitalize;
 }
 
 @media (min-width: 48rem) {

@@ -9,7 +9,7 @@ const MovieCard = ({ movie }) => {
           src={
             movie.Poster !== "N/A"
               ? movie.Poster
-              : "https://via.placeholder.com/400"
+              : "https://via.placeholder.com/300x420"
           }
           alt={movie.Title}
         />
@@ -17,15 +17,15 @@ const MovieCard = ({ movie }) => {
 
       <div className="movie-card-details">
         <div>
-          <span>{movie.Type}</span>
+          <span className="movie-type">{movie.Type}</span>
         </div>
 
         <div>
-          <h3>{movie.Title}</h3>
+          <h3 className="movie-title">{movie.Title}</h3>
         </div>
 
         <div>
-          <p>{movie.Year}</p>
+          <p className="movie-year">{movie.Year}</p>
         </div>
       </div>
     </div>
